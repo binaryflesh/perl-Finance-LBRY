@@ -11,4 +11,5 @@ Versioning](https://semver.org/spec/v2.0.0.html).
 - Added LICENSE
 - Added README.md
 - Added CHANGELOG
-
+- Added MANIFEST
+- Added dist.ini

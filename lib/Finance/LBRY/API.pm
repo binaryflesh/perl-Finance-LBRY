@@ -1,4 +1,4 @@
-package Finance::LBRY::API
+package Finance::LBRY::API;
 
 use Moo;
 use JSON::RPC::Client;
