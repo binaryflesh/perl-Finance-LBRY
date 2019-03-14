@@ -34,8 +34,7 @@ sub call
         }
     );
 
-    if (blessed $return and $return->can('is_success') and 
-$return->is_success)
+    if (blessed $return and $return->can('is_success') and $return->is_success)
     {
         $self->_set_error(undef);
         return $return->result;
@@ -47,8 +46,7 @@ $return->is_success)
     }
     else
     {
-        $self->_set_error(sprintf('HTTP $s', 
-$self->jsonrpc->status_line));
+        $self->_set_error(sprintf('HTTP $s', $self->jsonrpc->status_line));
         return;
     }
 }
@@ -72,21 +70,16 @@ print $balance;
 
 =head1 DESCRIPTION
 
-This module provides a low-level API for accessing a running LBRY 
-instance.
-See L<https://lbry.tech/api/sdk> and L<https://lbry.tech/api/blockchain> 
-for supported calls.
-=over 4
+This module provides a low-level API for accessing a running LBRY instance.
+See L<https://lbry.tech/api/sdk> and L<https://lbry.tech/api/blockchain> for supported calls.
 
 =item C<< new ( %args ) >>
 
-Constructor. %args is a hash of named arguments. Required parameter: 
-'endpoint'.
+Constructor. %args is a hash of named arguments. Required parameter: 'endpoint'.
 
 =item C<< call( $method, @params ) >>
 
-Call a method.  returns the result if successful; otherwise returns 
-undef.
+Call a method.  returns the result if successful; otherwise undef.
 
 =item C<< endpoint >>
 
@@ -94,8 +87,7 @@ The endpoint URI.
 
 =item C<< jsonrpc >>
 
-Retrieve a reference to the L<JSON::RPC::Client> object. C<< 
-$api->jsonrpc->ua >> can be useful to alter settings.
+Retrieve a reference to the L<JSON::RPC::Client> object. C<< $api->jsonrpc->ua >> can be useful to alter settings.
 
 =item C<< error >>
 
@@ -106,6 +98,7 @@ C<call>.
 
 =head1 SEE ALSO
 L<https://lbry.tech/api/blockchain>
+L<https://lbry.tech/api/sdk>
 
 =head1 AUTHOR
 
