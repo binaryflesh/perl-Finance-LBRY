@@ -1,11 +1,11 @@
-package Finance::LBRY;
+package WWW::LBRY;
 
-$Finance::LBRY::VERSION = '0.1';
+$WWW::LBRY::VERSION = '0.1';
 
 use strict;
 use warnings;
 
-use Finance::LBRY::API;
+use WWW::LBRY::API;
 
 __END__
 
@@ -13,11 +13,11 @@ __END__
 
 =head1 NAME
 
-Finance::LBRY - perl wrapper for LBRY and LBRYcrd APIs
+WWW::LBRY - perl wrapper for LBRY and LBRYcrd APIs
 
 =head1 SYNOPSIS
 
-See L<Finance::LBRY::API>
+See L<WWW::LBRY::API>
 
 =head1 AUTHOR
 

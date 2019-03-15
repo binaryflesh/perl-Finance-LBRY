@@ -1,4 +1,4 @@
-package Finance::LBRY::API;
+package WWW::LBRY::API;
 
 use Moo;
 use JSON::RPC::Client;
@@ -57,14 +57,14 @@ __END__
 
 =head1 NAME
 
-Finance::LBRY::API - wrapper for the LBRY JSON-RPC API
+WWW::LBRY::API - wrapper for the LBRY JSON-RPC API
 
 =head1 SYNOPSIS
 
-use Finance::LBRY::API;
+use WWW::LBRY::API;
 
 my $uri     = 'http://user:password@localhost:5279/';
-my $api     = Finance::LBRY::API->new( endpoint => $uri );
+my $api     = WWW::LBRY::API->new( endpoint => $uri );
 my $balance = $api->call('getbalance');
 print $balance;
 

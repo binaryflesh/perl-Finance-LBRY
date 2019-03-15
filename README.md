@@ -1,13 +1,13 @@
-# perl-Finance-LBRY
+# perl-WWW-LBRY
 Perl5 binding for the LBRY JSON-RPC API
 
 Usage:
 
 ```perl
-	use Finance::LBRY::API;
+	use WWW::LBRY::API;
 
 	my $uri     = 'http://user:password@localhost:5279/';
-	my $api     = Finance::LBRY::API->new( endpoint => $uri );
+	my $api     = WWW::LBRY::API->new( endpoint => $uri );
 	my $balance = $api->call('getbalance');
 	print $balance;
 ```

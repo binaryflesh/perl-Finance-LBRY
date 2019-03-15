@@ -1,5 +1,6 @@
 LICENSE
-lib/Finance/LBRY/API.pm
+lib/WWW/LBRY.pm
+lib/WWW/LBRY/API.pm
 README.md
 CHANGELOG
 .gitignore
